@@ -1,3 +1,4 @@
+#WAX-Invoice
 The main goal of this simple script is to let people create invoices for payment in WAX(P).
 It utilises GET parameters to fill in necessary fields. So you can create such link and send it to someone who is eager
 to pay you:
@@ -11,7 +12,7 @@ Currently, this script supports only WAXP tokens.
 Firstly, the payer will have to login with WAX cloud wallet. Only then the user should press the 'sign transaction'
 button. 
 
-TODOs:
+#TODOs:
 
 * possibility to prepare such an URL by just filling fields on separate page;
 * possibility to set the name of the invoice;
