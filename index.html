@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>WAX Invoice</title>
+  <style>
+    body {
+        background-color: powderblue;
+        }
+    span {
+        color: black;
+        font-size: 160%;
+        }
+    p    {
+        color: grey;
+        }
+</style>
+</head>
+
+<body>
+<strong>WAX Login</strong>
+<p>Use this if you're not automatically logged in. Note that if you are auto-logged in, clicking this does not open a popup and the userAccount is still returned.</p>
+<button id="login" onclick=login()>WAX Login</button>
+<p style="color:#ef9d47" id="loginresponse"></p>
+<p style="color:#ef9d47" id="autologin"></p>
+
+<p>Recipient: <span id="to"></span></p>
+<p>Amount: <span id="amount"></span></p>
+<p>Memo: <span id="memo"></span></p>
+<script src='waxjs.js'></script>
+<script src="invoice.js"></script>
+
+<p>Click once you're logged in.</p>
+<button id="sign" onclick=sign()>Sign Transaction</button>
+<p id="response" style="color:green"></p>
+
+<a href="create.html">Create your own invoice.</a>
+</body>
+</html>
