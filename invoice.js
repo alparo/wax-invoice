@@ -25,7 +25,7 @@ async function autoLogin() {
         document.getElementById('autologin').insertAdjacentHTML('beforeend', str);
     }
     else {
-        document.getElementById('autologin').insertAdjacentHTML('beforeend', 'Not auto-logged in');
+        document.getElementById('autologin').insertAdjacentHTML('beforeend', '⚠ Not auto-logged in');
     }
 }
 

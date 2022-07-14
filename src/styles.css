@@ -1,0 +1,65 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  padding: 40px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+p:last-of-type {
+  margin-bottom: 1em;
+}
+
+.data-table {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.data {
+  font-weight: bold;
+}
+
+.info {
+  color: #999;
+  margin-bottom: 0 !important;
+}
+
+.warning {
+  color: orange;
+}
+
+.info,
+.warning {
+  size: 0.7em;
+  margin-bottom: 5px !important;
+}
+
+.button-large {
+  font-size: 1.4rem;
+  padding: 0 2rem;
+}
+
+.login-block,
+.data-table {
+  margin-bottom: 20px;
+}

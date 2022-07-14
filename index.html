@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
   <title>WAX Invoice</title>
-  <style>
-    body {
-        background-color: powderblue;
-        }
-    span {
-        color: black;
-        font-size: 160%;
-        }
-    p    {
-        color: grey;
-        }
-</style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./src/styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"/>
 </head>
 
 <body>
-<strong>WAX Login</strong>
-<p>Use this if you're not automatically logged in. Note that if you are auto-logged in, clicking this does not open a popup and the userAccount is still returned.</p>
-<button id="login" onclick=login()>WAX Login</button>
-<p style="color:#ef9d47" id="loginresponse"></p>
-<p style="color:#ef9d47" id="autologin"></p>
+<div class="app">
+  <div class="content">
+    <h2>WAX invoice</h2>
+    <div class="login-block">
+      <p>Use this if you're not automatically logged in:</p>
+      <p class="warning" id="loginresponse"></p>
+      <p class="warning" id="autologin"></p>
+      <button class="button button-large" id="login" onclick=login()>Login</button>
+    </div>
 
-<p>Recipient: <span id="to"></span></p>
-<p>Amount: <span id="amount"></span></p>
-<p>Memo: <span id="memo"></span></p>
-<script src='waxjs.js'></script>
-<script src="invoice.js"></script>
+    <div class="data-table">
+      <div class="label">Recipient</div>
+      <div class="data" id="to"></div>
 
-<p>Click once you're logged in.</p>
-<button id="sign" onclick=sign()>Sign Transaction</button>
-<p id="response" style="color:green"></p>
+      <div class="label">Amount</div>
+      <div class="data" id="amount"></div>
 
-<a href="create.html">Create your own invoice.</a>
+      <div class="label">Memo</div>
+      <div class="data" id="memo"></div>
+
+      <script src='waxjs.js'></script>
+      <script src="invoice.js"></script>
+    </div>
+
+    <p class="info">Click once you're logged in:</p>
+    <button class="button" id="sign" onclick=sign()>Sign Transaction</button>
+    <p id="response" style="color:green"></p>
+
+    <a href="create.html">Create your own invoice.</a>
+  </div>
+</div>
 </body>
 </html>

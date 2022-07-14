@@ -6,15 +6,14 @@ to pay you:
 https://example.com/?to=recipient.wam&amount=15&memo=donation
 
 Opening this URL will result in pre-filling fields, so the recipient will be 'recipient.wam', payer will pay 15 WAXP
-and the memo will be 'donation'.
+and the memo will be 'donation'. Currently, this script supports only WAXP tokens.
 
-Currently, this script supports only WAXP tokens. 
-Firstly, the payer will have to log in with WAX cloud wallet. Only then the user should press the 'sign transaction'
+Firstly, the payer will have to log in with WAX cloud wallet. Only then the user should press the 'Sign transaction'
 button. 
 
 # TODOs:
 
-* possibility to prepare such an URL by just filling fields on separate page;
+* possibility to prepare such URL by just filling fields on separate page;
 * possibility to set the name of the invoice;
 * hide 'sign transaction' button till users logs in;
 * more beautiful interface;
