@@ -16,7 +16,7 @@ button.
 * possibility to prepare such URL by just filling fields on separate page;
 * possibility to set the name of the invoice;
 * hide 'sign transaction' button till users logs in;
-* more beautiful interface;
+* ~~more beautiful interface;~~
 * possibility to input memo before paying if the memo wasn't set by recipient;
 * support for Anchor wallet.
 
